@@ -34,8 +34,8 @@ jobs:
           restore-keys: |
             poetry-${{ hashFiles('**/poetry.lock') }}
 
-      - name: Set Poetry config
-        run: |
+      # - name: Set Poetry config
+      #   run: |
           # poetry config settings.virtualenvs.in-project false
           # poetry config settings.virtualenvs.path ~/.virtualenvs
           # poetry config settings.virtualenvs.path ~/.cache/pypoetry/virtualenvs
